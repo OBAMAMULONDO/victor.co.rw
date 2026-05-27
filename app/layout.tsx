@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 
-  // 3. Open Graph (How your link renders when shared on WhatsApp/Socials)
+  // 3. Open Graph (Social Previews)
   openGraph: {
     title: "Obama Mulondo Victor | Full-Stack Developer & Systems Student",
     description:
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "Victor Dev Portfolio",
     images: [
       {
-        url: "/og-image.png", // Drop a screenshot of your portfolio in your /public folder named og-image.png
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Obama Mulondo Victor Portfolio Preview",
