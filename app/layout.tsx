@@ -12,22 +12,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   // 1. Core SEO Identity
   title: {
     default: "Obama Mulondo Victor | Full-Stack Developer & Systems Student",
     template: "%s | Obama Mulondo Victor",
   },
-  description: "Portfolio of Obama Mulondo Victor, a Junior Frontend Developer studying software development at College Appec. Specializing in Next.js, Vue 3, Supabase, and Network Administration.",
+  description:
+    "Portfolio of Obama Mulondo Victor, a Junior Frontend Developer studying software development at College Appec. Specializing in Next.js, Vue 3, Supabase, and Network Administration.",
   keywords: [
-    "Obama Mulondo Victor", 
-    "College Appec Remera-Rukoma", 
-    "Frontend Developer Rwanda", 
-    "Next.js Portfolio", 
+    "Obama Mulondo Victor",
+    "College Appec Remera-Rukoma",
+    "Frontend Developer Rwanda",
+    "Next.js Portfolio",
     "Supabase Developer",
-    "Network Administrator Portfolio"
+    "Network Administrator Portfolio",
   ],
   authors: [{ name: "Obama Mulondo Victor" }],
   creator: "Obama Mulondo Victor",
@@ -41,7 +40,8 @@ export const metadata: Metadata = {
   // 3. Open Graph (How your link renders when shared on WhatsApp/Socials)
   openGraph: {
     title: "Obama Mulondo Victor | Full-Stack Developer & Systems Student",
-    description: "Explore responsive, secure web applications and resilient network architectures engineered by Victor.",
+    description:
+      "Explore responsive, secure web applications and resilient network architectures engineered by Victor.",
     url: "https://victor-co-rw.vercel.app",
     siteName: "Victor Dev Portfolio",
     images: [
@@ -81,6 +81,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <meta
+          name="google-site-verification"
+          content="7l0I4aE8orbD_tB08ieTY_24Ow8Ch1R0pp9NXUtJ5mo"
+        />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
