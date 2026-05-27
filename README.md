@@ -7,8 +7,8 @@
 ### Full-Stack Frontend Developer & Network Systems Engineer
 **College Appec Remera-Rukoma** • Based in Rwanda
 
-[![GitHub Followers](https://img.shields.io/github/followers/ObamaMulondoVictor?style=social)](https://github.com/ObamaMulondoVictor)
-[![Website](https://img.shields.io/badge/Portfolio-Live_Site-00ff00?style=flat-square&logo=google-chrome&logoColor=white)](https://yourdomain.dev)
+[![GitHub Followers](https://img.shields.io/github/followers/ObamaMulondoVictor?style=social)](https://github.com/OBAMAMULONDO)
+[![Website](https://img.shields.io/badge/Portfolio-Live_Site-00ff00?style=flat-square&logo=google-chrome&logoColor=white)](https://victorcorw.vercel.app)
 
 ---
 
