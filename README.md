@@ -1,22 +1,19 @@
-# victor.co.rw
-🚀 Hero Headline "Hi, I'm Obama Mulondo Victor. I build responsive, secure web apps and engineer resilient network architectures."  📝 Short "About Me" "I am a Software Development Student at College Appec Remera-Rukoma and a Junior Frontend Developer.  I bridge the gap between frontend engineering and network systems. I specialize in crafting 
-
-
-
 # 👨‍💻 Obama Mulondo Victor
 ### Full-Stack Frontend Developer & Network Systems Engineer
 **College Appec Remera-Rukoma** • Based in Rwanda
 
 [![GitHub Followers](https://img.shields.io/github/followers/ObamaMulondoVictor?style=social)](https://github.com/OBAMAMULONDO)
-[![Website]([https://img.shields.io/badge/Portfolio-Live_Site-00ff00?style=flat-square&logo=google-chrome&logoColor=white](https://victor-co-rw.vercel.app/))]([https://victorcorw.vercel.app](https://victor-co-rw.vercel.app/))
+[![Website](https://img.shields.io/badge/Portfolio-Live_Site-00ff00?style=flat-square&logo=google-chrome&logoColor=white)](https://victor-co-rw.vercel.app/)
 
 ---
 
 ## 🚀 About Me
 
-I am a **Software Development Student** and a **Junior Frontend Developer** building at the intersection of fast user interfaces and secure network architectures. 
+> "Hi, I'm **Obama Mulondo Victor**. I build responsive, secure web apps and engineer resilient network architectures."
 
-My engineering philosophy blends sleek, mobile-first frontend design with rigorous backend pipelines and system security. Thanks to my background in Linux environments and network administration, I build applications with network efficiency and performance baked right into the core layout.
+I am a **Software Development Student at College Appec Remera-Rukoma** and a **Junior Frontend Developer**. 
+
+My engineering philosophy bridges the gap between clean frontend layouts and deep network infrastructure. I specialize in crafting high-performance, mobile-first interfaces using **Next.js, Vue 3, and Tailwind CSS**, backed by dynamic data management with **Node.js and Supabase**. Armed with rigorous local system training in **Linux (Debian/Kali)** and network visibility tools like **Wireshark and Cisco Packet Tracer**, I approach code with security and bandwidth optimization in mind.
 
 ---
 
@@ -61,3 +58,20 @@ My engineering philosophy blends sleek, mobile-first frontend design with rigoro
 
 * 🛠️ **Version Control:** Rigid workflow architectures using Git, feature branching, and GitHub repositories.
 * 💻 **Portable Dev Environment:** Managing zero-footprint environments utilizing localized packages straight from hardware storage.
+
+---
+
+## ⚙️ Local Development Setup
+
+This portfolio layout is engineered on top of a Next.js framework environment booted with `create-next-app`. To clone down and run the local development server dependencies on your desktop environment:
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Start the local server
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
