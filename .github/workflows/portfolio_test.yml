@@ -3,27 +3,41 @@ name: Testing Portfolio If No Errors
 on:
   pull_request:
     branches: [main]
+  issues:
+    types: [opened]
 
 jobs:
   test:
-   
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      # 1. Welcome new contributors if it's their first time
+      - name: First interaction
+        uses: actions/first-interaction@v1.3.0
         with:
-          node-version: '24'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: "Welcome to my portfolio repo! Thanks for opening your first issue. 😊"
+          pr-message: "Thank you for your first Pull Request! The automated tests are running now."
 
+      # 2. Pull the code into the runner
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 3. Setup the environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22' # Using stable LTS version
+
+      # 4. Install and run quality checks
       - name: Install dependencies
-        run: npm install
+        run: npm ci # Faster and safer for CI/CD than 'npm install'
 
+      # If any step below fails, the pipeline stops immediately and blocks the merge
       - name: Run lint
         run: npm run lint
-      - name : Run Test
-        run: npm run test  
+
+      - name: Run Test
+        run: npm test
 
       - name: Build portfolio
         run: npm run build
