@@ -1,0 +1,47 @@
+# Obama Mulondo Victor
+
+**Full-Stack Frontend Developer & Network Systems Engineer**  
+College Appec Remera-Rukoma • Based in Rwanda
+
+## Professional Identity
+
+Hi, I'm Obama Mulondo Victor. I build responsive, secure web apps and engineer resilient network architectures. I am a Software Development Student at College Appec Remera-Rukoma and a Junior Frontend Developer specializing in Next.js, Vue 3, and Tailwind CSS.
+
+## Portfolio & Social Links
+
+- **Portfolio:** https://victor-co-rw.vercel.app/
+- **GitHub:** https://github.com/OBAMAMULONDO
+- **Instagram:** [To be implemented]
+
+## Technical Skills
+
+### Frontend & UI Engineering
+- Next.js (App Router, SSR, Server Actions)
+- Vue 3 (Composition API, Vite, Pinia)
+- Tailwind CSS (Utility Classes, Flexbox/Grid)
+- JavaScript (ES6+, Async/Await, Fetch API)
+
+### Backend, Cloud & Databases
+- Node.js (Server-side runtime, REST API engineering)
+- Supabase (Realtime database, PostgreSQL, OAuth/JWT)
+- MongoDB (Document indexing, unstructured data)
+- PHP (Server-side processing, legacy infrastructure)
+
+### Systems & Network Infrastructure
+- Linux System Administration (Debian & Kali Linux)
+- Network Analysis (Wireshark, packet capturing, protocol decoding)
+- Network Simulation (Cisco Packet Tracer, VLAN topologies)
+
+## Featured Projects
+
+### INB Construction and Supply Ltd
+Full-Stack Enterprise Platform for commercial web catalog management.  
+Tech Stack: Next.js, Tailwind CSS, Node.js, Supabase
+
+### Charcoal Management System
+Mobile-First Retail Platform tracking sales pipelines and transactions.  
+Tech Stack: Vue 3, Tailwind CSS, Local Storage API
+
+## Verification & Credibility
+- GitHub: https://github.com/OBAMAMULONDO
+- Portfolio: https://victor-co-rw.vercel.app/

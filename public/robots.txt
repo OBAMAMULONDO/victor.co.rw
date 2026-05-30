@@ -1,0 +1,22 @@
+# AI Crawler Permissions
+# Allow major AI crawlers to index the site
+
+User-agent: *
+Allow: /
+Allow: /llms.txt
+
+# Specific AI crawler permissions
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /

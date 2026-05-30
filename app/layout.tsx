@@ -77,6 +77,45 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // AI-Targeted Structured Data Graph (Person and Educational Organization)
+  const jsonLdGraph = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://victor-co-rw.vercel.app/#person",
+        "name": "Obama Mulondo Victor",
+        "jobTitle": "Junior Frontend Developer",
+        "url": "https://victor-co-rw.vercel.app",
+"sameAs": [
+           "https://github.com/OBAMAMULONDO",
+           "https://linkedin.com/in/obamamulondo"
+         ],
+        "knowsAbout": [
+          "Frontend Development",
+          "Next.js",
+          "React",
+          "Vue 3",
+          "Tailwind CSS",
+          "Supabase",
+          "Node.js",
+          "Network Administration",
+          "Cisco Packet Tracer"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "College Appec Remera-Rukoma"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://victor-co-rw.vercel.app/#profile",
+        "url": "https://victor-co-rw.vercel.app",
+        "mainEntity": { "@id": "https://victor-co-rw.vercel.app/#person" }
+      }
+    ]
+  };
+
   return (
     <html
       lang="en"
@@ -87,10 +126,16 @@ export default function RootLayout({
           name="google-site-verification"
           content="7l0I4aE8orbD_tB08ieTY_24Ow8Ch1R0pp9NXUtJ5mo"
         />
+        {/* Injecting the clean structured data for LLM Context Parsing */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdGraph) }}
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }
