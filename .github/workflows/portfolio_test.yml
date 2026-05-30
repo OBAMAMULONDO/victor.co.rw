@@ -3,22 +3,39 @@ name: Testing Portfolio If No Errors
 on:
   pull_request:
     branches: [main]
+  issues:
+    types: [opened]
+
+# ─── ADDED THIS BLOCK TO FIX THE PERMISSIONS ERROR ───
+permissions:
+  issues: write
+  pull-requests: write
+  contents: read # Required to allow checkout to read your code
 
 jobs:
   test:
-   
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: First interaction
+        uses: actions/first-interaction@v1.3.0
         with:
-          node-version: '24'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: "Welcome to my portfolio repo! Thanks for opening your first issue. 😊"
+          pr-message: "Thank you for your first Pull Request! The automated tests are running now."
 
+      # Pull the code into the runner
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Setup the environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Install and run quality checks
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run lint
         run: npm run lint
