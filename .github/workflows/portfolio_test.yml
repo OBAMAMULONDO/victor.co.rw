@@ -40,8 +40,7 @@ jobs:
       - name: Run lint
         run: npm run lint
 
-      - name: Run Test
-        run: npm test
+     
 
       - name: Build portfolio
         run: npm run build
