@@ -11,10 +11,9 @@ export default function ClientLayoutWrapper({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Show splash/loader for 2 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 800);
 
     return () => clearTimeout(timer);
   }, []);

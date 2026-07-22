@@ -1,24 +1,19 @@
-
-
-
 "use client";
 
 import { 
-  LuCode,            // Changed from LuCode2
-  LuDatabase, 
-  LuShieldCheck, 
-  LuLayoutGrid,      // Changed from LuLayout
-  LuCheck,     // Changed from LuCheckCircle2
-  LuArrowRight,
-  LuSparkles,
-  LuServer,
-  LuSmartphone
-} from "react-icons/lu";
+  LayoutGridIcon,
+  DatabaseIcon, 
+  ShieldCheckIcon, 
+  CheckIcon, 
+  ArrowRightIcon,
+  SparklesIcon,
+  SmartphoneIcon
+} from "./icons";
 
 export default function Servicepage() {
   const services = [
     {
-      icon: <LuLayoutGrid className="w-7 h-7 text-amber-500" />,
+      icon: <LayoutGridIcon className="w-7 h-7 text-amber-500" />,
       title: "Custom Frontend Engineering",
       subtitle: "Vue 3 • Next.js • React • Tailwind CSS",
       description:
@@ -31,7 +26,7 @@ export default function Servicepage() {
       ],
     },
     {
-      icon: <LuDatabase className="w-7 h-7 text-amber-500" />,
+      icon: <DatabaseIcon className="w-7 h-7 text-amber-500" />,
       title: "Full-Stack Development & APIs",
       subtitle: "Node.js • Supabase • MongoDB • REST APIs",
       description:
@@ -44,7 +39,7 @@ export default function Servicepage() {
       ],
     },
     {
-      icon: <LuShieldCheck className="w-7 h-7 text-amber-500" />,
+      icon: <ShieldCheckIcon className="w-7 h-7 text-amber-500" />,
       title: "System Diagnostics & Security Hardening",
       subtitle: "Network Security • Linux • Diagnostics",
       description:
@@ -57,7 +52,7 @@ export default function Servicepage() {
       ],
     },
     {
-      icon: <LuSmartphone className="w-7 h-7 text-amber-500" />,
+      icon: <SmartphoneIcon className="w-7 h-7 text-amber-500" />,
       title: "Custom Software Utilities & Dashboards",
       subtitle: "Business Management • Tracking Systems",
       description:
@@ -81,16 +76,14 @@ export default function Servicepage() {
   return (
     <section id="service" className="relative w-full py-24 px-4 sm:px-8 md:px-12 lg:px-16 bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 overflow-hidden">
       
-      {/* Background Ambient Lights */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col gap-20">
         
-        {/* HEADER SECTION */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
           <div className="flex items-center gap-2 text-amber-600 dark:text-amber-400 font-extrabold text-xs tracking-widest uppercase px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20">
-            <LuSparkles className="w-4 h-4" />
+            <SparklesIcon className="w-4 h-4" />
             <span>Services & Solutions</span>
           </div>
 
@@ -103,7 +96,6 @@ export default function Servicepage() {
           </p>
         </div>
 
-        {/* SERVICES GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((item, idx) => (
             <div
@@ -131,11 +123,10 @@ export default function Servicepage() {
 
                 <div className="w-full h-px bg-zinc-200 dark:bg-zinc-800 my-2" />
 
-                {/* Feature Checklist */}
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {item.features.map((feat, fIdx) => (
                     <li key={fIdx} className="flex items-center gap-2.5 text-xs font-semibold text-zinc-700 dark:text-zinc-300">
-                      <LuCheck className="w-4 h-4 text-amber-500 flex-shrink-0" />
+                      <CheckIcon className="w-4 h-4 text-amber-500 flex-shrink-0" />
                       <span>{feat}</span>
                     </li>
                   ))}
@@ -144,13 +135,12 @@ export default function Servicepage() {
 
               <div className="pt-6 mt-4 flex items-center gap-2 text-sm font-bold text-amber-600 dark:text-amber-400 cursor-pointer">
                 <span>Start a Project</span>
-                <LuArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </div>
           ))}
         </div>
 
-        {/* TRUST BUILDING: WORK PROCESS */}
         <div className="bg-zinc-900 text-white rounded-3xl p-8 sm:p-12 border border-zinc-800 flex flex-col gap-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-zinc-800 pb-8">
             <div>
@@ -179,7 +169,6 @@ export default function Servicepage() {
           </div>
         </div>
 
-        {/* BOTTOM CTA CARD */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-gradient-to-r from-amber-500 to-amber-600 text-black shadow-2xl">
           <div className="flex flex-col gap-1 text-center sm:text-left">
             <h3 className="text-2xl font-black">Have a custom software or web project in mind?</h3>
