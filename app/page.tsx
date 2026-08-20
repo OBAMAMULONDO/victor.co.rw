@@ -1,7 +1,8 @@
 import dynamic from "next/dynamic";
 import Navbar from "./components/Navbar";
 import Herosection from "./components/Herosection";
-import Whatsappcall from "./components/whatsappCall";
+// import Whatsappcall from "./components/whatsappCall";
+import  ActionMenu  from "./components/actionMenu";
 
 const Aboutpage = dynamic(() => import("./components/aboutpage"));
 const Services = dynamic(() => import("./components/service"));
@@ -14,7 +15,8 @@ export default function Home() {
       <Herosection />
       <Aboutpage />
       <Services />
-      <Whatsappcall />
+      {/* <Whatsappcall /> */}
+      <ActionMenu />
       <div className="flex items-center justify-center w-full px-4 py-8 sm:px-6 sm:py-10 md:p-10">
         <Contactpage />
       </div>
