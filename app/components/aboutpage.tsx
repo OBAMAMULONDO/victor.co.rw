@@ -49,17 +49,17 @@ export default function Aboutpage() {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
               <div className="p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm flex flex-col gap-1">
                 <span className="text-3xl font-black text-amber-500">100%</span>
-                <span className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Client Focused</span>
+                <span className="text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-wider">Client Focused</span>
               </div>
 
               <div className="p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm flex flex-col gap-1">
                 <span className="text-3xl font-black text-amber-500">Full</span>
-                <span className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Stack Capability</span>
+                <span className="text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-wider">Stack Capability</span>
               </div>
 
               <div className="p-4 rounded-2xl sm:col-span-1 col-span-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm flex flex-col gap-1">
                 <span className="text-3xl font-black text-amber-500">24/7</span>
-                <span className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Security Mindset</span>
+                <span className="text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-wider">Security Mindset</span>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Aboutpage() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Technical Arsenal</h3>
-                <p className="text-xs text-zinc-500">Tools & Methodologies</p>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Tools & Methodologies</p>
               </div>
             </div>
 
@@ -88,7 +88,7 @@ export default function Aboutpage() {
             </ul>
 
             <div className="pt-4 border-t border-zinc-200 dark:border-zinc-800">
-              <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider block mb-3">
+              <span className="text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-wider block mb-3">
                 Core Technologies
               </span>
               <div className="flex flex-wrap gap-2 text-xs font-semibold">
