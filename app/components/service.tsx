@@ -30,7 +30,7 @@ export default function Servicepage() {
       title: "Full-Stack Development & APIs",
       subtitle: "Node.js • Supabase • MongoDB • REST APIs",
       description:
-        "Developing scalable backends, seamless database integrations, and structured endpoints to powers complex business logic, inventory systems, and enterprise portals.",
+        "Developing scalable backends, seamless database integrations, and structured endpoints to power complex business logic, inventory systems, and enterprise portals.",
       features: [
         "MongoDB & Supabase Data Architecture",
         "Secure User Auth & Access Control",
@@ -151,7 +151,7 @@ export default function Servicepage() {
                 HOW WE GO FROM IDEA TO DEPLOYMENT
               </h3>
             </div>
-            <p className="text-zinc-400 text-sm max-w-md">
+            <p className="text-zinc-300 text-sm max-w-md">
               A structured engineering pipeline ensures your project stays on schedule, bug-free, and optimized for growth.
             </p>
           </div>
@@ -159,24 +159,24 @@ export default function Servicepage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((p, i) => (
               <div key={i} className="flex flex-col gap-3">
-                <span className="text-4xl font-black text-amber-400/30">
+                <span className="text-4xl font-black text-amber-400/80">
                   {p.step}
                 </span>
                 <h4 className="text-lg font-bold text-white">{p.name}</h4>
-                <p className="text-xs text-zinc-400 leading-relaxed">{p.desc}</p>
+                <p className="text-xs text-zinc-300 leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-gradient-to-r from-amber-500 to-amber-600 text-black shadow-2xl">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-amber-500 text-zinc-950 shadow-2xl">
           <div className="flex flex-col gap-1 text-center sm:text-left">
             <h3 className="text-2xl font-black">Have a custom software or web project in mind?</h3>
-            <p className="text-sm font-medium opacity-90">Let&apos;s build something fast, secure, and ready to scale.</p>
+            <p className="text-sm font-semibold opacity-95">Let&apos;s build something fast, secure, and ready to scale.</p>
           </div>
           <a
             href="#contact"
-            className="px-8 py-4 bg-black text-white rounded-full font-extrabold text-sm hover:bg-zinc-900 transition flex-shrink-0"
+            className="px-8 py-4 bg-zinc-950 text-white rounded-full font-extrabold text-sm hover:bg-zinc-800 transition flex-shrink-0 shadow-md"
           >
             Get In Touch Now
           </a>

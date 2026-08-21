@@ -13,22 +13,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const BASE_URL = "https://victor-rw.de5.net";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://victor.co.rw"),
-  title: "Victor Dev | Full-Stack Frontend Developer & Network Systems Engineer",
+  metadataBase: new URL(BASE_URL),
+  title: "Victor Dev | Full-Stack Software Developer in Rwanda",
   description:
-    "A 2nd-year Software Development student at College Appec Remera-Rukoma building responsive, secure web apps with Next.js, Vue 3, and Tailwind CSS. Based in Kigali, Rwanda.",
+    "A Software Development student building responsive, secure web apps with Next.js, Node.js, TypeScript, and Tailwind CSS. Based in Kigali, Rwanda.",
   keywords: [
     "Victor Dev",
     "Obama Mulondo Victor",
-    "full-stack developer",
+    "full-stack developer in Rwanda",
+    "software developer Kigali",
     "frontend developer",
     "network engineer",
     "Next.js",
-    "Vue 3",
     "React",
+    "TypeScript",
     "Tailwind CSS",
-    "Supabase",
     "Node.js",
     "Linux",
     "Kigali",
@@ -40,21 +42,21 @@ export const metadata: Metadata = {
 
   // Canonical URL
   alternates: {
-    canonical: "https://victor.co.rw/",
+    canonical: BASE_URL,
   },
 
   // Open Graph / Facebook Meta
   openGraph: {
     type: "website",
-    url: "https://victor.co.rw/",
-    title: "Victor Dev | Full-Stack Frontend Developer & Network Systems Engineer",
+    url: BASE_URL,
+    title: "Victor Dev | Full-Stack Software Developer in Rwanda",
     description:
-      "Building responsive, secure web apps and engineering resilient network architectures. Based in Kigali, Rwanda.",
-    siteName: "Victor Dev",
+      "Building responsive, secure web applications and scalable API architecture. Based in Kigali, Rwanda.",
+    siteName: "Victor Dev Portfolio",
     locale: "en_US",
     images: [
       {
-        url: "https://victor.co.rw/head_out_portrait.png",
+        url: `${BASE_URL}/head_out_portrait.png`,
         width: 1200,
         height: 630,
         alt: "Victor Dev Portrait",
@@ -65,10 +67,10 @@ export const metadata: Metadata = {
   // Twitter Card Meta
   twitter: {
     card: "summary_large_image",
-    title: "Victor Dev | Full-Stack Frontend Developer & Network Systems Engineer",
+    title: "Victor Dev | Full-Stack Software Developer in Rwanda",
     description:
-      "Building responsive, secure web apps and engineering resilient network architectures. Based in Kigali, Rwanda.",
-    images: ["https://victor.co.rw/head_out_portrait.png"],
+      "Building responsive, secure web applications and scalable API architecture. Based in Kigali, Rwanda.",
+    images: [`${BASE_URL}/head_out_portrait.png`],
   },
 
   // Favicons
@@ -82,7 +84,7 @@ export const metadata: Metadata = {
   },
 };
 
-// JSON-LD Structured Data
+// Enhanced JSON-LD Structured Data for AI & Search Engines
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -90,11 +92,26 @@ const jsonLd = {
   alternateName: "Victor Dev",
   givenName: "Victor",
   familyName: "Obama Mulondo",
-  jobTitle: "Full-Stack Frontend Developer & Network Systems Engineer",
+  jobTitle: "Full-Stack Software Developer & Network Systems Engineer",
   description:
-    "A 2nd-year Software Development student at College Appec Remera-Rukoma building responsive, secure web apps and engineering resilient network architectures.",
-  url: "https://victor.co.rw/",
+    "Software Development student in Rwanda building responsive web applications with Next.js, TypeScript, Node.js, and modern databases.",
+  url: BASE_URL,
   sameAs: ["https://github.com/OBAMAMULONDO"],
+  knowsAbout: [
+    "Software Development",
+    "Full-Stack Web Development",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Tailwind CSS",
+    "Network Systems Engineering",
+    "Database Management"
+  ],
+  knowsLanguage: ["en", "rw"],
+  alumniOf: {
+    "@type": "EducationalOrganization",
+    name: "College Appec Remera-Rukoma"
+  },
   address: {
     "@type": "PostalAddress",
     addressLocality: "Kigali",
