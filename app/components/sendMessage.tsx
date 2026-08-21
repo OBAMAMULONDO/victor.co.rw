@@ -52,18 +52,18 @@ const Button = () => {
             </svg>
           </div>
           <p>
-            <span style={{ "--i": 0 }}>S</span>
-            <span style={{ "--i": 1 }}>e</span>
-            <span style={{ "--i": 2 }}>n</span>
-            <span style={{ "--i": 3 }}>d</span>
-            <span style={{ "--i": 4 }}> </span>
-            <span style={{ "--i": 5 }}>M</span>
-            <span style={{ "--i": 6 }}>e</span>
-            <span style={{ "--i": 7 }}>s</span>
-            <span style={{ "--i": 8 }}>s</span>
-            <span style={{ "--i": 9 }}>a</span>
-            <span style={{ "--i": 10 }}>g</span>
-            <span style={{ "--i": 11 }}>e</span>
+            <span style={{ "--i": 0 } as any}>S</span>
+            <span style={{ "--i": 1 } as any}>e</span>
+            <span style={{ "--i": 2 } as any}>n</span>
+            <span style={{ "--i": 3 } as any}>d</span>
+            <span style={{ "--i": 4 } as any}> </span>
+            <span style={{ "--i": 5 } as any}>M</span>
+            <span style={{ "--i": 6 } as any}>e</span>
+            <span style={{ "--i": 7 } as any}>s</span>
+            <span style={{ "--i": 8 } as any}>s</span>
+            <span style={{ "--i": 9 } as any}>a</span>
+            <span style={{ "--i": 10} as any}>g</span>
+            <span style={{ "--i": 11} as any}>e</span>
           </p>
         </div>
         <div className="state state--sent">
@@ -90,11 +90,11 @@ const Button = () => {
             </svg>
           </div>
           <p>
-            <span style={{ "--i": 5 }}>S</span>
-            <span style={{ "--i": 6 }}>e</span>
-            <span style={{ "--i": 7 }}>n</span>
-            <span style={{ "--i": 8 }}>t</span>
-            <span style={{ "--i": 9 }}>!</span>
+            <span style={{ "--i": 5 } as any}>S</span>
+            <span style={{ "--i": 6 } as any}>e</span>
+            <span style={{ "--i": 7 } as any}>n</span>
+            <span style={{ "--i": 8 } as any}>t</span>
+            <span style={{ "--i": 9 } as any}>!</span>
           </p>
         </div>
       </button>

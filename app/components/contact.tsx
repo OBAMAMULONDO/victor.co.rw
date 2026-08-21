@@ -19,7 +19,7 @@ export default function Contactpage() {
   useEffect(() => {
     if (status === "success" || status === "error") {
       const timer = setTimeout(() => {
-        setStatus(""); // Or whatever your default/reset status value is (e.g., null)
+        setStatus("idle"); // Or whatever your default/reset status value is (e.g., null)
       }, 4000); // Clears after 4 seconds
 
       return () => clearTimeout(timer); // Cleanup the timer if component unmounts or status changes
@@ -131,7 +131,7 @@ export default function Contactpage() {
           <div className="flex items-center justify-between gap-3 text-emerald-950 bg-emerald-100/90 h-fit w-fit p-3 sm:p-4 mb-4 sm:mb-5 rounded-2xl font-bold text-sm sm:text-base border border-emerald-300">
             <p>Message sent successfully! Thank you.</p>
             <button
-              onClick={() => setStatus("")}
+              onClick={() => setStatus("idle")}
               className="text-emerald-800 hover:text-emerald-950 px-1.5 rounded-lg text-lg font-bold"
               aria-label="Close"
             >
@@ -143,7 +143,7 @@ export default function Contactpage() {
           <div className="flex items-center justify-between gap-3 text-red-950 bg-red-100/90 font-bold text-sm sm:text-base p-3 rounded-2xl mb-3 border border-red-300">
             <p>{errorMsg}</p>
             <button
-              onClick={() => setStatus("")}
+              onClick={() => setStatus("idle")}
               className="text-red-800 hover:text-red-950 px-1.5 rounded-lg text-lg font-bold"
               aria-label="Close"
             >
